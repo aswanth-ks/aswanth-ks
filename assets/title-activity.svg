@@ -1,0 +1,15 @@
+<!-- animated section title: gradient text + draw-in underline with glow pulse -->
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="66" viewBox="0 0 460 66" fill="none" role="img" aria-label="Activity">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <text x="230" y="34" text-anchor="middle" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="1.2" fill="url(#g)">Activity</text>
+  <rect y="48" height="3" rx="1.5" fill="url(#g)" x="230" width="0">
+    <animate attributeName="x" from="230" to="186" begin="0.1s" dur="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <animate attributeName="width" from="0" to="88" begin="0.1s" dur="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" begin="0.9s" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>

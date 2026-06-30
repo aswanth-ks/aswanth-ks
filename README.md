@@ -2,61 +2,54 @@
   ╔══════════════════════════════════════════════════════════════════╗
   ║  Aswanth Karuppannan — GitHub Profile README                      ║
   ║                                                                    ║
-  ║  Locked design system (do not deviate):                            ║
-  ║    Palette   base #0A0E14 · card #11151C · text #E6E8EB/#8B92A0    ║
-  ║              accent gradient #3B82F6 -> #8B5CF6 · highlight #22D3EE ║
-  ║    Motion    exactly 5 animated moments, everything else static:   ║
-  ║              1 header name sweep   -> assets/header.svg            ║
-  ║              2 terminal boot type  -> assets/terminal.svg          ║
-  ║              3 "building" pulse dot -> assets/status.svg           ║
-  ║              4 learning bars fill  -> assets/skills.svg            ║
-  ║              5 contribution graph  -> activity-graph service       ║
-  ║  All motion is external SVG (<img>); GitHub strips inline <script>.║
+  ║  Palette   base #0A0E14 · card #11151C · text #E6E8EB/#8B92A0      ║
+  ║            accent gradient #3B82F6 -> #8B5CF6 · highlight #22D3EE   ║
+  ║  Motion    self-hosted animated SVG in /assets (absolute raw URLs  ║
+  ║            so GitHub's image proxy always resolves them):          ║
+  ║            hero · terminal · status · skills · tech · titles ·     ║
+  ║            divider. Live-data cards (stats / graph) are 3rd-party. ║
   ╚══════════════════════════════════════════════════════════════════╝
 -->
 
-<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
 <div align="center">
 
 <br>
 
-<img src="./assets/header.svg" width="720" alt="Aswanth Karuppannan — Backend Engineer · CSE Student · Backend Developer Intern">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/hero.svg" width="760" alt="Aswanth Karuppannan — Backend Engineer · CSE Student · Backend Developer Intern">
 
-<br>
-
-<img src="./assets/status.svg" width="320" alt="Currently building TerraSentinel AI">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/status.svg" width="320" alt="Currently building TerraSentinel AI">
 
 <br>
 
 </div>
 
-<!-- ════════════════════════ DIVIDER ════════════════════════ -->
-<img src="./assets/divider.svg" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/divider.svg" width="100%" alt="">
 
 <!-- ══════════════════ TERMINAL BOOT SEQUENCE ══════════════════ -->
 <div align="center">
 
-<img src="./assets/terminal.svg" width="760" alt="$ whoami — aswanth, backend engineer, systems thinker. Current focus: TerraSentinel AI and embedded systems. Status: available for backend / AI engineering roles.">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/terminal.svg" width="760" alt="$ whoami — aswanth, backend engineer, systems thinker. Current focus: TerraSentinel AI and embedded systems. Status: available for backend / AI engineering roles.">
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/divider.svg" width="100%" alt="">
 
 <!-- ═══════════════════ MISSION / HOW I WORK ═══════════════════ -->
 <div align="center">
 
-### How I Work
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/title-how-i-work.svg" width="360" alt="How I Work">
 
 </div>
 
 I care more about systems that hold up under real load than systems that look good in a demo. Most of my work lives in backend architecture and database design — the parts that don't show up in a screenshot but decide whether everything else actually works.
 
-<img src="./assets/divider.svg" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/divider.svg" width="100%" alt="">
 
 <!-- ════════════════════════ CURRENT FOCUS ════════════════════════ -->
 <div align="center">
 
-### Current Focus
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/title-current-focus.svg" width="360" alt="Current Focus">
 
 </div>
 
@@ -66,13 +59,12 @@ I care more about systems that hold up under real load than systems that look go
 
 &nbsp;&nbsp;**→**&nbsp;&nbsp;Deepening **full-stack fundamentals** — HTTP, JDBC, servlet architecture
 
-<img src="./assets/divider.svg" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/divider.svg" width="100%" alt="">
 
 <!-- ═══════════════════════ FEATURED PROJECTS ═══════════════════════ -->
-<!-- Plain titles, plain descriptions. No marketing language, no badges. -->
 <div align="center">
 
-### Featured Work
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/title-featured.svg" width="360" alt="Featured Work">
 
 </div>
 
@@ -133,61 +125,51 @@ End-to-end backend for restaurant operations — orders, inventory, and billing 
 </tr>
 </table>
 
-<img src="./assets/divider.svg" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/divider.svg" width="100%" alt="">
 
 <!-- ════════════════════════ TECHNOLOGY STACK ════════════════════════ -->
-<!-- The most static, least decorated part of the page. Reference, not showcase. -->
 <div align="center">
 
-### Stack
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/title-stack.svg" width="360" alt="Stack">
 
-<table>
-<tr><td align="right"><b>Backend</b></td><td>&nbsp;&nbsp;Java · Spring Boot · Python · FastAPI · Node.js</td></tr>
-<tr><td align="right"><b>Frontend</b></td><td>&nbsp;&nbsp;React · TypeScript · Tailwind CSS</td></tr>
-<tr><td align="right"><b>Database</b></td><td>&nbsp;&nbsp;PostgreSQL · MySQL · MongoDB</td></tr>
-<tr><td align="right"><b>AI</b></td><td>&nbsp;&nbsp;OpenAI APIs · LangChain · LLM integration</td></tr>
-<tr><td align="right"><b>IoT</b></td><td>&nbsp;&nbsp;ESP32 · Arduino · Embedded Systems</td></tr>
-<tr><td align="right"><b>Tools</b></td><td>&nbsp;&nbsp;Git · Docker · Linux</td></tr>
-</table>
+<br>
+
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/tech.svg" width="760" alt="Stack — Backend: Java, Spring Boot, Python, FastAPI, Node.js · Frontend: React, TypeScript, Tailwind CSS · Database: PostgreSQL, MySQL, MongoDB · AI: OpenAI APIs, LangChain, LLM integration · IoT: ESP32, Arduino, Embedded Systems · Tools: Git, Docker, Linux">
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/divider.svg" width="100%" alt="">
 
 <!-- ═══════════════════ ARCHITECTURE PHILOSOPHY ═══════════════════ -->
 <div align="center">
 
-### Architecture Philosophy
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/title-philosophy.svg" width="420" alt="Architecture Philosophy">
 
 </div>
 
 I design sequentially and lock decisions as I go: business objects before bounded contexts, bounded contexts before aggregate roots, aggregate roots before database schema. I'd rather move slower and not redo foundational decisions than move fast and rebuild later.
 
-<img src="./assets/divider.svg" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/divider.svg" width="100%" alt="">
 
 <!-- ════════════════════════ LEARNING ROADMAP ════════════════════════ -->
-<!-- Honest qualitative labels, not percentages. Bars fill once (skills.svg). -->
 <div align="center">
 
-### Currently Learning
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/title-learning.svg" width="380" alt="Currently Learning">
 
 <br>
 
-<img src="./assets/skills.svg" width="760" alt="Currently learning — Distributed systems and event-driven architecture (learning); Advanced PostgreSQL performance tuning (comfortable); Production-grade LLM application patterns (learning)">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/skills.svg" width="760" alt="Currently learning — Distributed systems and event-driven architecture (learning); Advanced PostgreSQL performance tuning (comfortable); Production-grade LLM application patterns (learning)">
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/divider.svg" width="100%" alt="">
 
 <!-- ════════════════════════ GITHUB ACTIVITY ════════════════════════ -->
-<!--
-  Two cards max + the (naturally animated) contribution graph.
-  All configured to the locked palette: bg #0A0E14, accents #3B82F6/#8B5CF6,
-  highlight #22D3EE. No streaks, no trophies.
--->
+<!-- Live-data cards (3rd-party). If a card ever shows broken, the service
+     is rate-limited that moment — refresh later; the rest is self-hosted. -->
 <div align="center">
 
-### Activity
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/title-activity.svg" width="300" alt="Activity">
 
 <br>
 
@@ -204,40 +186,36 @@ I design sequentially and lock decisions as I go: business objects before bounde
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/divider.svg" width="100%" alt="">
 
 <!-- ════════════════════════ PHOTOGRAPHY ════════════════════════ -->
-<!--
-  A quiet breath after the technical density. 3-4 images, clean grid,
-  no animation, no filters. Drop images into assets/photography/ and
-  uncomment the grid below.
--->
+<!-- Drop 3-4 images into assets/photography/ and uncomment the grid. -->
 <div align="center">
 
-### Through a Lens
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/title-lens.svg" width="360" alt="Through a Lens">
 
 <sub>Away from the keyboard, I shoot — composition, light, patience. The same things software teaches: framing matters, details compound, simplicity is hard.</sub>
 
 <br><br>
 
 <!--
-<img src="./assets/photography/01.jpg" width="32%">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/photography/01.jpg" width="32%">
 &nbsp;
-<img src="./assets/photography/02.jpg" width="32%">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/photography/02.jpg" width="32%">
 &nbsp;
-<img src="./assets/photography/03.jpg" width="32%">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/photography/03.jpg" width="32%">
 -->
 
 <sub>Gallery coming soon — currently curating.</sub>
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="">
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/divider.svg" width="100%" alt="">
 
 <!-- ════════════════════════════ CONTACT ════════════════════════════ -->
 <div align="center">
 
-### Contact
+<img src="https://raw.githubusercontent.com/aswanth-ks/aswanth-ks/main/assets/title-contact.svg" width="300" alt="Contact">
 
 <br>
 

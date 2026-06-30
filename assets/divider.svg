@@ -1,15 +1,26 @@
 <!--
-  Section divider — the ONE separator style used between every section.
-  Static. A thin 1.5px line that fades transparent -> gray -> transparent.
-  (The header carries the only blue->violet divider; sections stay neutral.)
+  Section divider — faded gray line with a single gradient dot that
+  glides across it (subtle continuous motion between sections).
 -->
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="14" viewBox="0 0 800 14" fill="none" role="img" aria-label="">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="18" viewBox="0 0 800 18" fill="none" role="img" aria-label="">
   <defs>
     <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0"   stop-color="#8B92A0" stop-opacity="0"/>
       <stop offset="0.5" stop-color="#8B92A0" stop-opacity="0.40"/>
       <stop offset="1"   stop-color="#8B92A0" stop-opacity="0"/>
     </linearGradient>
+    <linearGradient id="dot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="g" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2.5"/></filter>
   </defs>
-  <rect x="0" y="6" width="800" height="1.5" fill="url(#fade)"/>
+  <rect x="0" y="8" width="800" height="1.5" fill="url(#fade)"/>
+  <circle cy="9" r="4" fill="url(#dot)" filter="url(#g)" opacity="0.9">
+    <animate attributeName="cx" values="120;680;120" dur="7s" keyTimes="0;0.5;1" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </circle>
+  <circle cy="9" r="2.2" fill="#E6E8EB">
+    <animate attributeName="cx" values="120;680;120" dur="7s" keyTimes="0;0.5;1" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="7s" repeatCount="indefinite"/>
+  </circle>
 </svg>

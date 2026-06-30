@@ -1,0 +1,54 @@
+<!--
+  HERO HEADER (upgraded)
+  - Drifting aurora gradient blobs (blue + violet) behind the name
+  - Name: animated blue->violet gradient sweep + soft glow
+  - Subtitle fades in; gradient rule draws in
+  Self-contained, transparent bg so it floats on any GitHub theme.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="250" viewBox="0 0 840 250" fill="none" role="img" aria-label="Aswanth Karuppannan — Backend Engineer · CSE Student · Backend Developer Intern">
+  <defs>
+    <linearGradient id="sweep" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="360" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="720 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="#3B82F6" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#8B5CF6" stop-opacity="0.95"/>
+      <stop offset="1"   stop-color="#3B82F6" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="42"/></filter>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+
+  <!-- drifting aurora -->
+  <g opacity="0.28">
+    <ellipse cx="320" cy="110" rx="210" ry="78" fill="#3B82F6" filter="url(#soft)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 26 -14; 0 0" dur="11s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="540" cy="120" rx="200" ry="72" fill="#8B5CF6" filter="url(#soft)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -24 16; 0 0" dur="13s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- name glow + name -->
+  <text x="420" y="118" text-anchor="middle" filter="url(#glow)" opacity="0.55"
+        font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif"
+        font-size="58" font-weight="700" letter-spacing="0.4" fill="url(#sweep)">Aswanth Karuppannan</text>
+  <text x="420" y="118" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif"
+        font-size="58" font-weight="700" letter-spacing="0.4" fill="url(#sweep)">Aswanth Karuppannan</text>
+
+  <!-- subtitle (fades in) -->
+  <text x="420" y="158" text-anchor="middle" opacity="0"
+        font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif"
+        font-size="14.5" font-weight="500" letter-spacing="3.2" fill="#8B92A0">BACKEND ENGINEER &#160;·&#160; CSE STUDENT &#160;·&#160; BACKEND DEVELOPER INTERN
+    <animate attributeName="opacity" from="0" to="1" begin="0.5s" dur="1s" fill="freeze"/>
+  </text>
+
+  <!-- rule (draws in from center) -->
+  <rect y="184" height="2" rx="1" fill="url(#rule)" x="420" width="0">
+    <animate attributeName="x" from="420" to="260" begin="0.7s" dur="0.9s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <animate attributeName="width" from="0" to="320" begin="0.7s" dur="0.9s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+  </rect>
+</svg>
