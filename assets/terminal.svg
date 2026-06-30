@@ -1,0 +1,44 @@
+<!--
+  TERMINAL BOOT SEQUENCE  (animation moment 2 of 5)
+  Each line is typed in left-to-right by an animated clip rectangle (SMIL),
+  staggered so it reads like a real boot. Runs once, then holds (fill=freeze).
+  A cyan caret blinks after the last line. Self-contained dark card.
+  $ = cyan prompt, > = gray output marker, accents in violet/cyan.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300" fill="none" role="img" aria-label="Terminal: whoami aswanth, backend engineer and systems thinker; current focus TerraSentinel AI and embedded systems; status available for backend and AI engineering roles">
+  <defs>
+    <clipPath id="c1"><rect x="30" y="55"  width="0" height="24"><animate attributeName="width" from="0" to="80"  begin="0.2s" dur="0.20s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c2"><rect x="30" y="82"  width="0" height="24"><animate attributeName="width" from="0" to="430" begin="0.5s" dur="0.85s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c3"><rect x="30" y="126" width="0" height="24"><animate attributeName="width" from="0" to="150" begin="1.45s" dur="0.30s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c4"><rect x="30" y="153" width="0" height="24"><animate attributeName="width" from="0" to="600" begin="1.85s" dur="1.10s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c5"><rect x="30" y="180" width="0" height="24"><animate attributeName="width" from="0" to="510" begin="3.05s" dur="0.95s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c6"><rect x="30" y="224" width="0" height="24"><animate attributeName="width" from="0" to="90"  begin="4.10s" dur="0.20s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c7"><rect x="30" y="251" width="0" height="24"><animate attributeName="width" from="0" to="440" begin="4.40s" dur="0.85s" fill="freeze"/></rect></clipPath>
+  </defs>
+
+  <!-- card -->
+  <rect x="1" y="1" width="798" height="298" rx="14" fill="#0A0E14" stroke="#1E2430" stroke-width="1"/>
+  <!-- window chrome -->
+  <circle cx="28" cy="26" r="5.5" fill="#2A313D"/>
+  <circle cx="48" cy="26" r="5.5" fill="#2A313D"/>
+  <circle cx="68" cy="26" r="5.5" fill="#2A313D"/>
+  <line x1="0" y1="46" x2="800" y2="46" stroke="#161B24" stroke-width="1"/>
+
+  <g font-family="'SF Mono','JetBrains Mono','Fira Code','Consolas','Courier New',monospace" font-size="15">
+    <text x="32" y="72"  clip-path="url(#c1)"><tspan fill="#22D3EE">$</tspan><tspan fill="#E6E8EB"> whoami</tspan></text>
+    <text x="32" y="99"  clip-path="url(#c2)"><tspan fill="#8B92A0">&gt;</tspan><tspan fill="#E6E8EB"> aswanth — backend engineer, systems thinker</tspan></text>
+
+    <text x="32" y="143" clip-path="url(#c3)"><tspan fill="#22D3EE">$</tspan><tspan fill="#E6E8EB"> current_focus</tspan></text>
+    <text x="32" y="170" clip-path="url(#c4)"><tspan fill="#8B92A0">&gt;</tspan><tspan fill="#E6E8EB"> architecting </tspan><tspan fill="#8B5CF6">TerraSentinel AI</tspan><tspan fill="#E6E8EB"> (geospatial intelligence platform)</tspan></text>
+    <text x="32" y="197" clip-path="url(#c5)"><tspan fill="#8B92A0">&gt;</tspan><tspan fill="#E6E8EB"> building embedded systems for agricultural automation</tspan></text>
+
+    <text x="32" y="241" clip-path="url(#c6)"><tspan fill="#22D3EE">$</tspan><tspan fill="#E6E8EB"> status</tspan></text>
+    <text x="32" y="268" clip-path="url(#c7)"><tspan fill="#8B92A0">&gt;</tspan><tspan fill="#22D3EE"> available</tspan><tspan fill="#E6E8EB"> for backend / AI engineering roles</tspan></text>
+  </g>
+
+  <!-- blinking caret, appears after the last line finishes -->
+  <rect x="430" y="255" width="9" height="16" fill="#22D3EE" opacity="0">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" dur="1s"
+             calcMode="discrete" begin="5.3s" repeatCount="indefinite"/>
+  </rect>
+</svg>

@@ -1,0 +1,15 @@
+<!--
+  Section divider — the ONE separator style used between every section.
+  Static. A thin 1.5px line that fades transparent -> gray -> transparent.
+  (The header carries the only blue->violet divider; sections stay neutral.)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="14" viewBox="0 0 800 14" fill="none" role="img" aria-label="">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="#8B92A0" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#8B92A0" stop-opacity="0.40"/>
+      <stop offset="1"   stop-color="#8B92A0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="6" width="800" height="1.5" fill="url(#fade)"/>
+</svg>

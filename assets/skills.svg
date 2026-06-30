@@ -1,0 +1,45 @@
+<!--
+  LEARNING / COMPETENCY BARS  (animation moment 4 of 5)
+  Bars fill in once on load (SMIL width, eased, freeze). Gradient-filled.
+  No fake percentages — bar length is relative, the word label is the truth:
+  LEARNING vs COMFORTABLE (cyan tags = honest status markers).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" fill="none" role="img" aria-label="Currently learning: distributed systems and event-driven architecture (learning); PostgreSQL performance tuning (comfortable); production LLM application patterns (learning)">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+
+  <g font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif">
+
+    <!-- Row 1 -->
+    <text x="24"  y="32" font-size="14.5" fill="#E6E8EB">Distributed systems &amp; event-driven architecture</text>
+    <text x="776" y="32" font-size="11" letter-spacing="1.5" text-anchor="end" fill="#22D3EE">LEARNING</text>
+    <rect x="24" y="42" width="752" height="9" rx="4.5" fill="#1E2430"/>
+    <rect x="24" y="42" width="0"   height="9" rx="4.5" fill="url(#bar)">
+      <animate attributeName="width" from="0" to="300" begin="0.3s" dur="1.3s"
+               fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    </rect>
+
+    <!-- Row 2 -->
+    <text x="24"  y="97" font-size="14.5" fill="#E6E8EB">Advanced PostgreSQL performance tuning</text>
+    <text x="776" y="97" font-size="11" letter-spacing="1.5" text-anchor="end" fill="#22D3EE">COMFORTABLE</text>
+    <rect x="24" y="107" width="752" height="9" rx="4.5" fill="#1E2430"/>
+    <rect x="24" y="107" width="0"   height="9" rx="4.5" fill="url(#bar)">
+      <animate attributeName="width" from="0" to="511" begin="0.5s" dur="1.3s"
+               fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    </rect>
+
+    <!-- Row 3 -->
+    <text x="24"  y="162" font-size="14.5" fill="#E6E8EB">Production-grade LLM application patterns</text>
+    <text x="776" y="162" font-size="11" letter-spacing="1.5" text-anchor="end" fill="#22D3EE">LEARNING</text>
+    <rect x="24" y="172" width="752" height="9" rx="4.5" fill="#1E2430"/>
+    <rect x="24" y="172" width="0"   height="9" rx="4.5" fill="url(#bar)">
+      <animate attributeName="width" from="0" to="338" begin="0.7s" dur="1.3s"
+               fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    </rect>
+
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<!--
+  HEADER  (animation moment 1 of 5)
+  Name rendered with an animated blue->violet gradient that sweeps slowly
+  across the text (SMIL gradientTransform translate, seamless reflect loop).
+  Role line is static secondary-gray. One thin blue->violet rule underneath.
+  Transparent background so the name floats on any GitHub theme.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="184" viewBox="0 0 820 184" fill="none" role="img" aria-label="Aswanth Karuppannan — Backend Engineer, CSE Student, Backend Developer Intern">
+  <defs>
+    <!-- sweeping gradient for the name -->
+    <linearGradient id="sweep" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="360" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        from="0 0" to="720 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+    <!-- the single header rule: blue -> violet, faded at both ends -->
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="#3B82F6" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#8B5CF6" stop-opacity="0.95"/>
+      <stop offset="1"   stop-color="#3B82F6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <text x="410" y="86" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif"
+        font-size="54" font-weight="700" letter-spacing="0.4"
+        fill="url(#sweep)">Aswanth Karuppannan</text>
+
+  <text x="410" y="124" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif"
+        font-size="14.5" font-weight="500" letter-spacing="3"
+        fill="#8B92A0">BACKEND ENGINEER &#160;·&#160; CSE STUDENT &#160;·&#160; BACKEND DEVELOPER INTERN</text>
+
+  <rect x="250" y="150" width="320" height="2" rx="1" fill="url(#rule)"/>
+</svg>

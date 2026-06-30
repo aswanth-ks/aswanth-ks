@@ -1,0 +1,22 @@
+<!--
+  CURRENTLY-BUILDING BADGE  (animation moment 3 of 5)
+  A soft pulsing cyan dot (the single highlight color, reserved for "live"
+  markers) with an expanding ring. Signals activity, not decoration.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="372" height="40" viewBox="0 0 372 40" fill="none" role="img" aria-label="Currently building TerraSentinel AI">
+  <rect x="1" y="1" width="370" height="38" rx="19" fill="#11151C" stroke="#1E2430" stroke-width="1"/>
+
+  <!-- expanding ring -->
+  <circle cx="26" cy="20" r="5" fill="none" stroke="#22D3EE" stroke-width="1.5">
+    <animate attributeName="r"       values="5;13"   dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0"  dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- core dot -->
+  <circle cx="26" cy="20" r="5" fill="#22D3EE">
+    <animate attributeName="opacity" values="1;0.45;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="48" y="25"
+        font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif"
+        font-size="14" letter-spacing="0.2" fill="#8B92A0">Currently building <tspan fill="#E6E8EB" font-weight="600">TerraSentinel AI</tspan></text>
+</svg>
